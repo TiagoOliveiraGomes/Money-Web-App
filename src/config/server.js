@@ -10,3 +10,5 @@ server.use(bodyParser.json())
 server.listen(port, () => {
     console.log(`server is running in port ${port}.`)
 })
+
+module.exports = server
