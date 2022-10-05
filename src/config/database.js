@@ -2,7 +2,7 @@ const mongoose = require("mongoose")
 require('dotenv').config()
 
 const PASSWORD = process.env.PASSWORD
-mongoose.Promise = global.Promise
+// mongoose.Promise = global.Promise
 
 // module.exports = mongoose.connect('mongodb://localhost/mymoney', {useMongoClient:true})
 module.exports = mongoose.connect(`mongodb+srv://MyMoneyFrontendMaster:${PASSWORD}@MyMoneyApp.pv8brb9.mongodb.net/MyMoneyApp?retryWrites=true&w=majority`, { useNewUrlParser: true, useUnifiedTopology: true})
