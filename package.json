@@ -19,11 +19,13 @@
   },
   "homepage": "https://github.com/TiagoOliveiraGomes/Money-Web-App#readme",
   "dependencies": {
+    "bcrypt": "^5.1.0",
     "body-parser": "^1.19.1",
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.17.2",
     "express-query-int": "^3.0.0",
+    "jsonwebtoken": "^8.5.1",
     "lodash": "^4.17.21",
     "mongodb": "^4.10.0",
     "mongoose": "^5.12.7",
