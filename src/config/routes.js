@@ -1,3 +1,4 @@
+const { Router } = require('express')
 const express = require('express')
 const auth = require('./auth')
 
@@ -8,7 +9,7 @@ module.exports = function (server) {
     protectedApi.use(auth)
 
     const billingCycle = require('../api/billingCycle/billingCycleService')
-    billingCycle.register(router, '/billingCycles')
+    billingCycle.register(protectedApi, '/billingCycles')
 
     const openApi = express.Router()
     server.use('oapi', openApi)
